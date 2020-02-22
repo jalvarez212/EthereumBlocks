@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Blockchain Boxes</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+<body id="parent">
+
+<script src='https://threejs.org/build/three.min.js'></script>
+<script src='https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/animejs@3.0.0/lib/anime.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+
+<p id="Intro">Explore the Ethereum Blockchain in 3D. Move around the scene and hover over blocks to explore.</p>
+<p id="alert">New block received!</p>
+<p id='blockheader'></p>
+<div id="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+<script src="js/blocks.js"></script>
+<script src="js/render.js"></script>
+</body>
+</html>
