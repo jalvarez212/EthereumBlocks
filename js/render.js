@@ -88,16 +88,16 @@ function findBlock(x){
 					"number: "+blockchainData[i].number+"<br>"+
 					"difficulty: "+blockchainData[i].difficulty+"<br>"+
 					"gasLimit: "+blockchainData[i].gasLimit+"<br>"+
-					"gasUsed: "+blockchainData[i].gasUsed+"<br>"+
-					"hash: "+blockchainData[i].hash+"<br>"+
-					"miner: "+blockchainData[i].miner+"<br>"+
-					"mixHash: "+blockchainData[i].mixHash+"<br>"+
-					"nonce: "+blockchainData[i].nonce+"<br>"+
-					"parentHash: "+blockchainData[i].parentHash+"<br>"+
-					"receiptsRoot: "+blockchainData[i].receiptsRoot+"<br>"+"<br>"+
-					"sha3Uncles: "+blockchainData[i].sha3Uncles+"<br>"+
-					"stateRoot: "+blockchainData[i].stateRoot+"<br>"+
-					"timestamp: "+blockchainData[i].timestamp+"<br>"+
+					"gasUsed: "+blockchainData[i].gasUsed+"<br><br>"+
+					"hash: "+blockchainData[i].hash+"<br><br>"+
+					"miner: "+blockchainData[i].miner+"<br><br>"+
+					"mixHash: "+blockchainData[i].mixHash+"<br><br>"+
+					"nonce: "+blockchainData[i].nonce+"<br><br>"+
+					"parentHash: "+blockchainData[i].parentHash+"<br><br>"+
+					"receiptsRoot: "+blockchainData[i].receiptsRoot+"<br><br>"+
+					"sha3Uncles: "+blockchainData[i].sha3Uncles+"<br><br>"+
+					"stateRoot: "+blockchainData[i].stateRoot+"<br><br>"+
+					"timestamp: "+blockchainData[i].timestamp+"<br><br>"+
 					"transactionsRoot: "+blockchainData[i].transactionsRoot;"<br>"
 					}
 

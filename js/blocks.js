@@ -8,7 +8,20 @@ function alert(){
 var info = document.getElementById('alert');
 info.style.display = "block";
 setTimeout(function(){info.style.display = "none";}, 500);
+var sound = document.querySelector('audio');
+sound.play();
+const playedPromise = sound.play();
+if (playedPromise) {
+        playedPromise.catch((e) => {
+            if (e.name === 'NotAllowedError' ||
+                e.name === 'NotSupportedError') {
+                //console.log(e.name);
+            }
+        });
+    }
 }
+
+
 
 web3.eth.subscribe('newBlockHeaders', function(error, result){
     if (!error) {
