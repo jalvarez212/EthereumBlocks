@@ -61,6 +61,8 @@ camera.position.z = 25;
 camera.position.y = 25;
 
 var controls = new THREE.OrbitControls( camera, renderer.domElement );
+controls.maxDistance = 400;
+controls.minDistance = 15;
 
 controls.update();
 

@@ -1,7 +1,30 @@
-body { margin: 0; }
-canvas { width: 100%; height: 100% }
-#alert {bottom:0;left:15px;display:none;position:absolute; }
-#blockheader {bottom:50%;left:15px;display:none;position:absolute; height: 200px;width: 200px; font-size: 10px; }
+body { 
+  margin: 0; 
+  font-size: 10px;
+  font-family: Monospace;
+}
+canvas { 
+  width: 100%; 
+  height: 100% }
+#alert {
+  bottom:0;
+  left:15px;
+  display:none;
+  position:absolute; 
+  color: red;
+  font-weight: 500px;
+  font-size: 13px;
+}
+#blockheader {
+  bottom:50%;
+  left:15px;
+  display:none;
+  position:absolute; 
+  height: 200px;
+  width: 200px; 
+  font-size: 10px;
+  font-family: Monospace;
+ }
 #Intro {top:0;left:15px;display:block;position:absolute; }
 #lds-spinner {
   color: official;
