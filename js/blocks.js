@@ -8,18 +8,14 @@ function alert(){
 var info = document.getElementById('alert');
 info.style.display = "block";
 setTimeout(function(){info.style.display = "none";}, 500);
-var sound = document.querySelector('audio');
-sound.play();
-const playedPromise = sound.play();
-if (playedPromise) {
-        playedPromise.catch((e) => {
-            if (e.name === 'NotAllowedError' ||
-                e.name === 'NotSupportedError') {
-                //console.log(e.name);
-            }
-        });
-    }
+
 }
+function playSound(filename){
+    var mp3Source = '<source src="' + filename + '.mp3" type="audio/mpeg">';
+    var oggSource = '<source src="' + filename + '.ogg" type="audio/ogg">';
+    var embedSource = '<embed hidden="true" autostart="true" loop="false" src="' + filename +'.mp3">';
+    document.getElementById("sound").innerHTML='<audio autoplay="autoplay">' + mp3Source + oggSource + embedSource + '</audio>';
+      }
 
 
 
@@ -31,6 +27,7 @@ web3.eth.subscribe('newBlockHeaders', function(error, result){
 	// Dispatch the event.
 	document.dispatchEvent(newBH);
 	alert();
+	playSound('block');
 	var loadIcon = document.getElementById('lds-spinner');
 	loadIcon.remove();
 
