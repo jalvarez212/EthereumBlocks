@@ -18,21 +18,6 @@ blockchain.push(mesh);
 startChain();
 };
 
-// function startChain(){
-
-// 	for (i=1; i < blockchain.length; i++ ){
-// 		blockchain[i].position.z -= 25;
-// 		if (blockchain[i].position.z == -175){
-// 			blockchain[i].position.y += 25;
-// 			blockchain[i].position.z = 0;
-// 		}
-// 		if (blockchain[i].position.y == 100){
-// 			blockchain[i].position.x += 50;
-// 			blockchain[i].position.y = 0;		
-// 		}
-
-// 	}
-// };
 
 function startChain(){
 
