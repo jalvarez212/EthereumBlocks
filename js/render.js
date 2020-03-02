@@ -35,6 +35,7 @@ function startChain(){
 
 document.addEventListener('build', newBlock);
 window.addEventListener( "mousemove", onDocumentMouseMove, false );
+window.addEventListener( "touchstart", onDocumentMouseMove, false );
 
 
 var renderer = new THREE.WebGLRenderer();
