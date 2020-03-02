@@ -22,7 +22,7 @@ startChain();
 function startChain(){
 
 
-	for (i=1; i < blockchain.length; i++ ){
+	for (i=0; i < blockchain.length; i++ ){
 			var currentPosX = blockchain[i].position.x;
 			var currentPosY = blockchain[i].position.y;
 			var currentPosZ = blockchain[i].position.z;
@@ -44,6 +44,7 @@ document.body.appendChild( renderer.domElement );
 
 camera.position.z = 25;
 camera.position.y = 25;
+camera.position.x = 25;
 
 var controls = new THREE.OrbitControls( camera, renderer.domElement );
 controls.maxDistance = 400;
@@ -68,7 +69,8 @@ function findBlock(x){
 		{ 
 
 			if (blockchainData.indexOf(blockchainData[i])==blockchain.indexOf(x))
-				{console.log('Found Match!');
+				{
+					console.log('Found Match!');
 					showBlock.innerHTML = 
 					"number: "+blockchainData[i].number+"<br>"+
 					"difficulty: "+blockchainData[i].difficulty+"<br>"+
